@@ -1,7 +1,55 @@
 {
-  "generatedAt": "2026-02-15T18:50:00.053Z",
+  "generatedAt": "2026-02-15T18:54:13.956Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "5ZEV2YEY",
+      "name": "Blueprint de Cargador escopeta III",
+      "category": "Blueprints",
+      "description": "Amplía significativamente la capacidad de munición de las escopetas.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/7/77/Extended_Shotgun_Mag_III.png/348px-Extended_Shotgun_Mag_III.png.webp",
+      "updatedAt": "2026-02-15T18:54:03.530Z"
+    },
+    {
+      "sku": "0441NMW2",
+      "name": "Blueprint de Cargador escopeta II",
+      "category": "Blueprints",
+      "description": "Amplía moderadamente la capacidad de munición de las armas compatibles que utilizan munición de escopeta.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/4/4f/Extended_Shotgun_Mag_II.png/348px-Extended_Shotgun_Mag_II.png.webp",
+      "updatedAt": "2026-02-15T18:52:34.763Z"
+    },
+    {
+      "sku": "5DPHFQAK",
+      "name": "Blueprint del Cargador mediano ampliador III",
+      "category": "Blueprints",
+      "description": "Amplía significativamente la capacidad de munición de las armas compatibles que utilizan munición mediana.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/a1/Extended_Medium_Mag_III.png/348px-Extended_Medium_Mag_III.png.webp",
+      "updatedAt": "2026-02-15T18:51:13.991Z"
+    },
+    {
+      "sku": "5VIDFCSZ",
+      "name": "Blueprint del Cargador mediano ampliador II",
+      "category": "Blueprints",
+      "description": "Amplía moderadamente la capacidad de munición de las armas compatibles que utilizan munición mediana.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/5/50/Extended_Medium_Mag_II.png/348px-Extended_Medium_Mag_II.png.webp",
+      "updatedAt": "2026-02-15T18:50:15.729Z"
+    },
     {
       "sku": "1WS_YTG0",
       "name": "Blueprint del Cargador ligero ampliador III",
