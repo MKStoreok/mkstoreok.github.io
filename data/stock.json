@@ -1,7 +1,67 @@
 {
-  "generatedAt": "2026-02-15T17:14:07.438Z",
+  "generatedAt": "2026-02-15T17:47:11.059Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "EE0Q5P6J",
+      "name": "Blueprint Torrente",
+      "category": "Blueprints",
+      "description": "La Torrente es una ametralladora ligera totalmente automática que utiliza munición mediana.",
+      "priceCents": 500,
+      "currency": "usd",
+      "stock": 5,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/1e/Torrente-Level1.png/348px-Torrente-Level1.png.webp",
+      "updatedAt": "2026-02-15T17:44:42.749Z"
+    },
+    {
+      "sku": "2RP0ABLR",
+      "name": "Blueprint de las Piezas de armas complejas",
+      "category": "Blueprints",
+      "description": "Se utilizan para fabricar armas más avanzadas y se pueden reciclar para fabricar materiales de fabricación.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/3/3d/Complex_Gun_Parts.png/348px-Complex_Gun_Parts.png.webp",
+      "updatedAt": "2026-02-15T17:43:25.847Z"
+    },
+    {
+      "sku": "8FB6Y1IR",
+      "name": "Blueprint Combate ver. 3 (agresivo)",
+      "category": "Blueprints",
+      "description": "Una versión mejorada del aumento Combat II. Admite más tipos de escudo y espacio adicional para granadas.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/a4/Combat_Mk._3_%28Aggressive%29.png/348px-Combat_Mk._3_%28Aggressive%29.png.webp",
+      "updatedAt": "2026-02-15T17:41:40.899Z"
+    },
+    {
+      "sku": "KRQP0XBG",
+      "name": "Blueprint de Combate ver.3 (Flanqueo)",
+      "category": "Blueprints",
+      "description": "Un aumento de combate más centrado en la maniobrabilidad que en absorber el daño.",
+      "priceCents": 700,
+      "currency": "uds",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/7/73/Combat_Mk._3_%28Flanking%29.png/348px-Combat_Mk._3_%28Flanking%29.png.webp",
+      "updatedAt": "2026-02-15T17:40:30.800Z"
+    },
+    {
+      "sku": "KZLYAAYQ",
+      "name": "Blueprint Afelio",
+      "category": "Blueprints",
+      "description": "El Afelio es un Fusil de batalla que usa Clips de energía.",
+      "priceCents": 1000,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/8/88/Aphelion.png/348px-Aphelion.png.webp",
+      "updatedAt": "2026-02-15T17:37:07.490Z"
+    },
     {
       "sku": "KPPOBOID",
       "name": "Blueprint Barra de luz azul",
