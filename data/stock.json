@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-02-15T19:30:00.051Z",
+  "generatedAt": "2026-02-15T19:30:27.256Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "-JXXSL0F",
+      "name": "Blueprint de la Torrente",
+      "category": "Blueprints",
+      "description": "La Torrente es una ametralladora ligera totalmente automática que utiliza munición mediana.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/1e/Torrente-Level1.png/348px-Torrente-Level1.png.webp",
+      "updatedAt": "2026-02-15T19:30:18.388Z"
+    },
     {
       "sku": "ZSWHC2AO",
       "name": "Blueprint de las Piezas de armas medianas",
