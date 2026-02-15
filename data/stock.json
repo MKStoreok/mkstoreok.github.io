@@ -1,7 +1,31 @@
 {
-  "generatedAt": "2026-02-15T18:00:00.044Z",
+  "generatedAt": "2026-02-15T18:02:32.301Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "YNPU0KQF",
+      "name": "Blueprint de Saqueo ver.3 (Supervivencia)",
+      "category": "Blueprints",
+      "description": "Una mula de carga robusta. Gran capacidad de peso y amplio espacio para mochila.",
+      "priceCents": 1800,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/7/74/Looting_Mk._3_%28Survivor%29.png/348px-Looting_Mk._3_%28Survivor%29.png.webp",
+      "updatedAt": "2026-02-15T18:02:19.043Z"
+    },
+    {
+      "sku": "Z6CJZYB6",
+      "name": "Blueprint de la Mina buscadora",
+      "category": "Blueprints",
+      "description": "Una granada teledirigida que se dirige a un único ARC cercano y provoca daño explosivo al impactar.",
+      "priceCents": 600,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/3/35/Seeker_Grenade.png/348px-Seeker_Grenade.png.webp",
+      "updatedAt": "2026-02-15T18:00:51.760Z"
+    },
     {
       "sku": "EE0Q5P6J",
       "name": "Blueprint Torrente",
