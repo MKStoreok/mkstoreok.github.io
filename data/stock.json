@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-15T20:00:00.058Z",
+  "generatedAt": "2026-02-15T20:10:00.062Z",
   "guildId": "1471170954603266144",
   "items": [
     {
       "sku": "DMKJMZR3",
-      "name": "Silenciador II b",
+      "name": "Silenciador II",
       "category": "Blueprints",
       "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
       "priceCents": 800,
@@ -12,7 +12,67 @@
       "stock": 3,
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/c/c0/Silencer_II.png/348px-Silencer_II.png.webp",
-      "updatedAt": "2026-02-15T19:59:49.886Z"
+      "updatedAt": "2026-02-15T20:04:25.775Z"
+    },
+    {
+      "sku": "IZU2-1BN",
+      "name": "Silenciador I",
+      "category": "Blueprints",
+      "description": "Reduce ligeramente la cantidad de ruido que se produce al disparar.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/f/f7/Silencer_I.png/348px-Silencer_I.png.webp",
+      "updatedAt": "2026-02-15T20:04:08.561Z"
+    },
+    {
+      "sku": "A5LNYB68",
+      "name": "Aguafiestas",
+      "category": "Blueprints",
+      "description": "Una granada que detona después de un tiempo y aturde a los enemigos dentro de su radio.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/18/Showstopper.png/348px-Showstopper.png.webp",
+      "updatedAt": "2026-02-15T20:03:56.307Z"
+    },
+    {
+      "sku": "NLTXLJ3W",
+      "name": "Silenciador de escopeta",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
+      "updatedAt": "2026-02-15T20:03:44.908Z"
+    },
+    {
+      "sku": "ZL0_7Y0R",
+      "name": "Estrangulador de escopeta III",
+      "category": "Blueprints",
+      "description": "Reduce significativamente la dispersión de la base.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/3/36/Shotgun_Choke_III.png/348px-Shotgun_Choke_III.png.webp",
+      "updatedAt": "2026-02-15T20:03:24.571Z"
+    },
+    {
+      "sku": "P9UFBAMP",
+      "name": "Estrangulador de escopeta II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la dispersión de la base.",
+      "priceCents": 600,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/6/63/Shotgun_Choke_II.png/348px-Shotgun_Choke_II.png.webp",
+      "updatedAt": "2026-02-15T20:03:07.366Z"
     },
     {
       "sku": "RGLBWNOH",
@@ -589,66 +649,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/a/ac/Bettina.png/348px-Bettina.png.webp",
       "updatedAt": "2026-02-15T19:40:48.889Z"
-    },
-    {
-      "sku": "IZU2-1BN",
-      "name": "Silenciador I",
-      "category": "Blueprints",
-      "description": "Reduce ligeramente la cantidad de ruido que se produce al disparar.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/f/f7/Silencer_I.png/348px-Silencer_I.png.webp",
-      "updatedAt": "2026-02-15T19:39:32.785Z"
-    },
-    {
-      "sku": "A5LNYB68",
-      "name": "Aguafiestas",
-      "category": "Blueprints",
-      "description": "Una granada que detona después de un tiempo y aturde a los enemigos dentro de su radio.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/1/18/Showstopper.png/348px-Showstopper.png.webp",
-      "updatedAt": "2026-02-15T19:38:30.526Z"
-    },
-    {
-      "sku": "NLTXLJ3W",
-      "name": "Silenciador de escopeta",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 4,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
-      "updatedAt": "2026-02-15T19:37:40.686Z"
-    },
-    {
-      "sku": "ZL0_7Y0R",
-      "name": "Estrangulador de escopeta III",
-      "category": "Blueprints",
-      "description": "Reduce significativamente la dispersión de la base.",
-      "priceCents": 800,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/3/36/Shotgun_Choke_III.png/348px-Shotgun_Choke_III.png.webp",
-      "updatedAt": "2026-02-15T19:36:39.840Z"
-    },
-    {
-      "sku": "P9UFBAMP",
-      "name": "Estrangulador de escopeta II",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente la dispersión de la base.",
-      "priceCents": 600,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/6/63/Shotgun_Choke_II.png/348px-Shotgun_Choke_II.png.webp",
-      "updatedAt": "2026-02-15T19:35:45.264Z"
     }
   ]
 }
