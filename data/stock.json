@@ -1,7 +1,31 @@
 {
-  "generatedAt": "2026-02-15T18:40:00.056Z",
+  "generatedAt": "2026-02-15T18:41:34.784Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "U_SSDNBQ",
+      "name": "Blueprint del Compensador II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la dispersión por disparo.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/0a/Compensator_II.png/348px-Compensator_II.png.webp",
+      "updatedAt": "2026-02-15T18:41:23.563Z"
+    },
+    {
+      "sku": "VYCVHNC-",
+      "name": "Blueprint de la Burleta",
+      "category": "Blueprints",
+      "description": "Es una pistola semiautomática que utiliza munición ligera.",
+      "priceCents": 1700,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/d/d4/Burletta-Level1.png/348px-Burletta-Level1.png.webp",
+      "updatedAt": "2026-02-15T18:40:04.580Z"
+    },
     {
       "sku": "ASDORLOM",
       "name": "Blueprint del Halieto",
