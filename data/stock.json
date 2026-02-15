@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-02-15T20:20:00.052Z",
+  "generatedAt": "2026-02-15T20:30:00.069Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "NLTXLJ3W",
+      "name": "Silenciador de escopeta",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
+      "updatedAt": "2026-02-15T20:21:09.628Z"
+    },
     {
       "sku": "DMKJMZR3",
       "name": "Silenciador II",
@@ -37,18 +49,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/1/18/Showstopper.png/348px-Showstopper.png.webp",
       "updatedAt": "2026-02-15T20:03:56.307Z"
-    },
-    {
-      "sku": "NLTXLJ3W",
-      "name": "Silenciador de escopeta",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 4,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
-      "updatedAt": "2026-02-15T20:03:44.908Z"
     },
     {
       "sku": "ZL0_7Y0R",
