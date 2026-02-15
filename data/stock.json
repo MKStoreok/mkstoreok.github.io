@@ -1,7 +1,79 @@
 {
-  "generatedAt": "2026-02-15T18:41:34.784Z",
+  "generatedAt": "2026-02-15T18:50:00.053Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "1WS_YTG0",
+      "name": "Blueprint del Cargador ligero ampliador III",
+      "category": "Blueprints",
+      "description": "Amplía significativamente la capacidad de munición de las armas compatibles que utilizan munición ligera.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/4/40/Extended_Light_Mag_III.png/348px-Extended_Light_Mag_III.png.webp",
+      "updatedAt": "2026-02-15T18:48:58.768Z"
+    },
+    {
+      "sku": "7EMJTGAY",
+      "name": "Blueprint del Cargador ligero ampliador II",
+      "category": "Blueprints",
+      "description": "Extiende moderadamente la capacidad de munición de las armas compatibles que usan munición ligera.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/cf/Extended_Light_Mag_II.png/348px-Extended_Light_Mag_II.png.webp",
+      "updatedAt": "2026-02-15T18:47:57.796Z"
+    },
+    {
+      "sku": "KXUJTM7K",
+      "name": "Blueprints del Cañon ampliado",
+      "category": "Blueprints",
+      "description": "Aumenta moderadamente la velocidad de la bala.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/2f/Extended_Barrel.png/348px-Extended_Barrel.png.webp",
+      "updatedAt": "2026-02-15T18:46:32.477Z"
+    },
+    {
+      "sku": "_IYXWHX3",
+      "name": "Blueprint del Ecualizador",
+      "category": "Blueprints",
+      "description": "Es un rifle de rayos automático especial que usa cargadores de energía.\n\n*Desbloquea el cargador de energía*",
+      "priceCents": 1000,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/9/96/Equalizer.png/348px-Equalizer.png.webp",
+      "updatedAt": "2026-02-15T18:45:29.667Z"
+    },
+    {
+      "sku": "WOBXOX7C",
+      "name": "Blueprint del Desfribilador",
+      "category": "Blueprints",
+      "description": "Una inyección que revive rápidamente a los Raiders caídos y les restaura algo de salud.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/5/5f/Defibrillator.png/348px-Defibrillator.png.webp",
+      "updatedAt": "2026-02-15T18:43:26.244Z"
+    },
+    {
+      "sku": "NVHB5OGD",
+      "name": "Blueprint del Compensador III",
+      "category": "Blueprints",
+      "description": "Reduce significativamente la dispersión por disparo.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/af/Compensator_III.png/348px-Compensator_III.png.webp",
+      "updatedAt": "2026-02-15T18:42:30.939Z"
+    },
     {
       "sku": "U_SSDNBQ",
       "name": "Blueprint del Compensador II",
