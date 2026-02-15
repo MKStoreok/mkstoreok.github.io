@@ -1,7 +1,91 @@
 {
-  "generatedAt": "2026-02-15T18:30:00.047Z",
+  "generatedAt": "2026-02-15T18:40:00.056Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "ASDORLOM",
+      "name": "Blueprint del Halieto",
+      "category": "Blueprints",
+      "description": "Es un rifle de francotirador de cerrojo que usa munición mediana. Excelente para alcanzar objetivos a larga distancia gracias a su mira.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/ae/Osprey-Level1.png/348px-Osprey-Level1.png.webp",
+      "updatedAt": "2026-02-15T18:39:11.778Z"
+    },
+    {
+      "sku": "1VLWHZZQ",
+      "name": "Blueprint de la Lince",
+      "category": "Blueprints",
+      "description": "Es una ametralladora completamente automática que utiliza munición ligera.",
+      "priceCents": 1500,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/3/36/Bobcat-Level1.png/348px-Bobcat-Level1.png.webp",
+      "updatedAt": "2026-02-15T18:38:03.331Z"
+    },
+    {
+      "sku": "2CDFRLMU",
+      "name": "Blueprint de la Granada incendiaria",
+      "category": "Blueprints",
+      "description": "Una granada que detona al impactar y cubre un área con fuego que inflige daño a lo largo del tiempo.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/24/Blaze_Grenade.png/348px-Blaze_Grenade.png.webp",
+      "updatedAt": "2026-02-15T18:36:57.213Z"
+    },
+    {
+      "sku": "M15S90HA",
+      "name": "Blueprint del Kit de barricada",
+      "category": "Blueprints",
+      "description": "Una cubierta desplegable que puede bloquear el daño entrante hasta que se rompa.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/cb/Barricade_Kit.png/348px-Barricade_Kit.png.webp",
+      "updatedAt": "2026-02-15T18:36:05.099Z"
+    },
+    {
+      "sku": "3GX0IYKM",
+      "name": "Blueprint de la Yunke",
+      "category": "Blueprints",
+      "description": "Es un cañón de mano de acción simple que utiliza munición pesada.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/00/Anvil-Level1.png/348px-Anvil-Level1.png.webp",
+      "updatedAt": "2026-02-15T18:34:44.449Z"
+    },
+    {
+      "sku": "UHH4PWJI",
+      "name": "Blueprint de la parte cascos",
+      "category": "Blueprints",
+      "description": "es un lanzagranadas de bombeo especial que utiliza munición de lanzador.",
+      "priceCents": 2100,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/b/ba/Hullcracker-Level1.png/348px-Hullcracker-Level1.png.webp",
+      "updatedAt": "2026-02-15T18:32:33.553Z"
+    },
+    {
+      "sku": "O6-VED28",
+      "name": "Blueprint de la Empuñadura inclinada III",
+      "category": "Blueprints",
+      "description": "Reduce significativamente el retroceso horizontal",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Angled_Grip_III.png/348px-Angled_Grip_III.png.webp",
+      "updatedAt": "2026-02-15T18:31:37.363Z"
+    },
     {
       "sku": "P-RVKMJ4",
       "name": "Blueprint de la Empuñadura inclinada II",
