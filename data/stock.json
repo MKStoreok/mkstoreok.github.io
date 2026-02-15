@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-02-15T18:02:32.301Z",
+  "generatedAt": "2026-02-15T18:10:00.068Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "P-RVKMJ4",
+      "name": "Blueprint de la Empuñadura inclinada II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente el retroceso horizontal.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/2b/Angled_Grip_II.png/348px-Angled_Grip_II.png.webp",
+      "updatedAt": "2026-02-15T18:03:43.708Z"
+    },
     {
       "sku": "YNPU0KQF",
       "name": "Blueprint de Saqueo ver.3 (Supervivencia)",
