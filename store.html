@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MK STORE // SYSTEM</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            neon: '#B6ff00',
+            void: '#050505',
+            panel: '#0E0E0E',
+            surface: '#161616',
+            border: '#262626'
+          },
+          fontFamily: {
+            display: ['Space Grotesk', 'sans-serif'],
+            hud: ['Rajdhani', 'sans-serif'],
+            ui: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --neon: #B6ff00; }
+    body { background-color: #050505; color: #e5e5e5; font-family: 'Manrope', sans-serif; overflow: hidden; }
+
+    /* === FX: Noise & Grid === */
+    .bg-grid { position: fixed; inset: 0; z-index: -2; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; opacity: 0.5; mask-image: radial-gradient(circle at center, black 30%, transparent 100%); }
+
+    /* === UI === */
+    .tactical-select { position: relative; font-family: 'Rajdhani', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; user-select: none; }
+    .select-trigger { display: flex; align-items: center; justify-content: space-between; height: 3rem; padding: 0 1rem; background: #0E0E0E; border: 1px solid #333; color: #999; cursor: pointer; transition: all 0.2s; }
+    .select-trigger:hover { border-color: #666; color: white; }
+    .tactical-select.active .select-trigger { border-color: var(--neon); color: white; background: #111; box-shadow: 0 0 15px rgba(182, 255, 0, 0.1); }
+    .select-options { position: absolute; top: 100%; left: 0; right: 0; background: #0a0a0a; border: 1px solid var(--neon); border-top: none; z-index: 50; display: none; max-height: 250px; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.9); }
+    .tactical-select.active .select-options { display: block; animation: slideDown 0.15s ease-out; }
+    .option { padding: 0.75rem 1rem; color: #888; cursor: pointer; border-bottom: 1px solid #1a1a1a; transition: all 0.15s; }
+    .option:hover { background: rgba(182, 255, 0, 0.1); color: var(--neon); padding-left: 1.25rem; }
+    .option.selected { background: var(--neon); color: black; font-weight: 700; }
+
+    .tech-input-group { position: relative; height: 3rem; background: #0E0E0E; border: 1px solid #333; display: flex; align-items: center; transition: border-color 0.2s; }
+    .tech-input-group:focus-within { border-color: var(--neon); box-shadow: 0 0 15px rgba(182, 255, 0, 0.15); }
+    .tech-input-group input { background: transparent; border: none; outline: none; color: white; font-family: 'Rajdhani', sans-serif; text-transform: uppercase; font-weight: 600; font-size: 0.9rem; width: 100%; height: 100%; padding-left: 1rem; }
+    .tech-input-group .icon { padding: 0 1rem; color: #555; }
+    
+    .btn-neon { background: #e5e5e5; color: black; font-family: 'Rajdhani', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.2s; position: relative; overflow: hidden; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+    .btn-neon::before { content: ''; position: absolute; inset: 0; background: var(--neon); transform: translateX(-100%); transition: transform 0.2s ease; z-index: 0; }
+    .btn-neon:hover::before { transform: translateX(0); }
+    .btn-neon span { position: relative; z-index: 1; }
+
+    /* View Toggles */
+    .btn-view { width: 3rem; height: 3rem; display: grid; place-items: center; border: 1px solid #333; background: #0E0E0E; color: #555; cursor: pointer; transition: all 0.2s; }
+    .btn-view:hover { border-color: #666; color: white; }
+    .btn-view.active { border-color: var(--neon); color: var(--neon); background: rgba(182, 255, 0, 0.05); }
+
+    /* === SKELETON LOADING === */
+    .skeleton { background: #111; position: relative; overflow: hidden; }
+    .skeleton::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent); animation: shimmer 1.5s infinite; }
+    @keyframes shimmer { 100% { transform: translateX(100%); } }
+
+    /* === CARDS (GRID vs LIST) === */
+    .card-tech { background: #0E0E0E; border: 1px solid #1F1F1F; position: relative; overflow: hidden; transition: all 0.3s; }
+    .card-tech:hover { transform: translateY(-4px); border-color: #444; }
+    .card-tech::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--neon); opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+    .card-tech:hover::after { opacity: 1; }
+    .card-img { transition: transform 0.5s, filter 0.3s; filter: grayscale(100%); }
+    .card-tech:hover .card-img { transform: scale(1.1); filter: grayscale(0%); }
+
+    /* List View Specifics */
+    .view-list .card-tech { display: flex; flex-direction: row; height: 100px; transform: none !important; }
+    .view-list .card-tech:hover { background: #141414; }
+    .view-list .img-wrap { width: 140px; height: 100%; border-bottom: none; border-right: 1px solid #222; }
+    .view-list .content-wrap { flex: 1; display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 0 1.5rem; }
+    .view-list .badge-wrap { top: auto; bottom: 0.5rem; right: auto; left: 0.5rem; }
+
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    .loader-wrap { position: fixed; inset: 0; z-index: 999; background: #050505; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .loading-bar-bg { width: 250px; height: 2px; background: #222; margin-top: 15px; position: relative; overflow: hidden; }
+    .loading-bar-fill { width: 0%; height: 100%; background: var(--neon); box-shadow: 0 0 10px var(--neon); }
+  </style>
+</head>
+
+<body class="antialiased selection:bg-neon selection:text-black">
+
+  <div class="bg-noise"></div>
+  <div class="bg-grid"></div>
+
+  <div id="loader" class="loader-wrap">
+    <div class="font-hud text-neon text-xs tracking-[0.2em] mb-2">ENTRANDO A...</div>
+    <div class="text-5xl font-display font-bold text-white tracking-tighter">MK<span class="text-neon">STORE</span></div>
+    <div class="loading-bar-bg"><div id="loadBar" class="loading-bar-fill"></div></div>
+    <div class="mt-2 font-mono text-xs text-gray-600" id="bootPct">0%</div>
+  </div>
+
+  <div id="app" class="opacity-0 relative min-h-screen flex flex-col p-6 md:p-10 max-w-[1900px] mx-auto">
+    
+    <header class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-6 mb-8 gap-6">
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-neon flex items-center justify-center font-bold text-black text-2xl clip-path-polygon" style="clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);">M</div>
+        <div>
+          <h1 class="text-4xl font-display font-bold uppercase leading-none tracking-tight">MK<span class="text-neon">Store</span> <span class="text-gray-600 text-2xl">v.0.4</span></h1>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="w-2 h-2 bg-neon rounded-full shadow-[0_0_8px_#B6ff00] animate-pulse"></span>
+            <span class="text-xs font-mono text-gray-500 uppercase tracking-widest">Stock actualizado. (Cada 10Min)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <div class="bg-surface border border-border px-5 py-3 min-w-[110px] group hover:border-white/20 transition-colors">
+          <div class="text-[10px] text-gray-500 font-hud uppercase tracking-wider mb-1">Total Items</div>
+          <div id="kpiTotal" class="text-2xl font-display text-white font-bold">000</div>
+        </div>
+        <div class="bg-surface border border-border px-5 py-3 min-w-[110px] group hover:border-neon transition-colors">
+          <div class="text-[10px] text-gray-500 font-hud uppercase tracking-wider mb-1">En Stock</div>
+          <div id="kpiActive" class="text-2xl font-display text-neon font-bold">000</div>
+        </div>
+        <div class="bg-surface border border-border px-5 py-3 min-w-[110px] group hover:border-red-500 transition-colors">
+          <div class="text-[10px] text-gray-500 font-hud uppercase tracking-wider mb-1">Agotados</div>
+          <div id="kpiLow" class="text-2xl font-display text-white font-bold group-hover:text-red-500 transition-colors">00</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sticky top-6 z-40 bg-void/90 backdrop-blur-md border border-white/10 p-2 mb-8 flex flex-col xl:flex-row gap-3 shadow-2xl items-center">
+      
+      <div class="tech-input-group w-full xl:flex-grow">
+        <div class="icon"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></div>
+        <input id="searchInput" type="text" placeholder="BUSCAR ITEM / REF...">
+      </div>
+      
+      <div class="flex w-full xl:w-auto gap-3">
+        <div class="tactical-select flex-1 xl:w-64" id="catSelectWrapper">
+          <div class="select-trigger"><span class="label">Categoría: Todas</span><span class="select-arrow">▼</span></div>
+          <div class="select-options custom-scrollbar" id="catOptions"><div class="option selected" data-value="All">Todas</div></div>
+        </div>
+
+        <div class="tactical-select flex-1 xl:w-56" id="statSelectWrapper">
+          <div class="select-trigger"><span class="label">Estado: Todos</span><span class="select-arrow">▼</span></div>
+          <div class="select-options">
+            <div class="option selected" data-value="all">Todos</div>
+            <div class="option" data-value="in">Disponibles</div>
+            <div class="option" data-value="low">Poco Stock</div>
+            <div class="option" data-value="out">Agotados</div>
+          </div>
+        </div>
+
+        <div class="flex gap-1">
+            <button id="viewGrid" class="btn-view active" title="Vista Cuadrícula">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+            </button>
+            <button id="viewList" class="btn-view" title="Vista Lista">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+      </div>
+
+      <button id="refreshBtn" class="btn-neon h-[3rem] px-8 flex items-center justify-center gap-2 w-full xl:w-auto">
+        <span>ACTUALIZAR</span>
+      </button>
+    </nav>
+
+    <div class="relative min-h-[400px]">
+        
+        <div id="skeletonTarget" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-6 hidden">
+            </div>
+
+        <main id="gridTarget" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
+          </main>
+
+        <div id="emptyState" class="hidden py-32 text-center border border-dashed border-gray-800 bg-white/5 rounded">
+          <h2 class="text-3xl font-display font-bold text-gray-600 mb-2">SIN RESULTADOS</h2>
+          <p class="text-gray-500 text-xs font-mono uppercase tracking-widest">Modifique los filtros de búsqueda</p>
+        </div>
+    </div>
+
+  </div>
+
+  <div id="drawerBackdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <aside id="drawer" class="fixed top-0 right-0 h-full w-full md:w-[600px] bg-[#0A0A0A] z-[60] transform translate-x-full border-l border-white/10 flex flex-col shadow-[0_0_100px_black]">
+    <div class="h-20 border-b border-white/10 flex items-center justify-between px-8 bg-[#0F0F0F]">
+      <div class="font-hud text-xs text-gray-400 tracking-[0.2em] uppercase flex items-center gap-2"><span class="w-1.5 h-1.5 bg-neon rounded-full"></span>Detalle del Producto</div>
+      <button id="closeDrawer" class="text-gray-500 hover:text-white transition-colors text-2xl">&times;</button>
+    </div>
+    <div class="flex-1 overflow-y-auto custom-scrollbar">
+      <div class="relative w-full aspect-video bg-black group overflow-hidden border-b border-white/5">
+        <div id="dImage" class="absolute inset-0 bg-cover bg-center opacity-80 transition-transform duration-700 group-hover:scale-110"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-8 w-full">
+          <span id="dCat" class="bg-neon text-black text-[10px] font-bold font-hud px-2 py-0.5 uppercase mb-2 inline-block">Category</span>
+          <h2 id="dName" class="text-4xl font-display font-bold text-white uppercase leading-none">Item Name</h2>
+          <div id="dSku" class="font-mono text-[10px] text-gray-500 mt-2">REF: ---</div>
+        </div>
+      </div>
+      <div class="p-8 space-y-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-surface p-4 border border-white/10 relative"><div class="text-[10px] text-gray-500 font-hud uppercase tracking-wider mb-1">Precio Unitario</div><div id="dPrice" class="text-2xl font-bold font-display text-white">$0.00</div><div class="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-white/20"></div></div>
+          <div class="bg-surface p-4 border border-white/10 relative"><div class="text-[10px] text-gray-500 font-hud uppercase tracking-wider mb-1">Disponibilidad</div><div id="dStock" class="font-bold text-white text-lg">---</div><div class="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-white/20"></div></div>
+        </div>
+        <div><h3 class="text-xs font-bold uppercase text-gray-500 tracking-wider mb-3 font-hud">Descripción</h3><p id="dDesc" class="text-gray-300 text-sm leading-relaxed font-ui border-l-2 border-neon pl-4">No hay descripción disponible.</p></div>
+        <div class="flex items-center justify-between pt-8 border-t border-white/5 text-[10px] font-mono text-gray-600"><span>Última Actualización</span><span id="dUpdate" class="text-neon">---</span></div>
+      </div>
+    </div>
+    <div class="p-6 border-t border-white/10 bg-[#0F0F0F]"><button class="w-full btn-neon py-4 text-sm tracking-widest" onclick="closeDrawer()"><span>Cerrar Panel</span></button></div>
+  </aside>
+
+  <script>
+    // CONFIG
+    const DATA_URL = "https://raw.githubusercontent.com/ImDizturbJS/ImDizturbJS.github.io/refs/heads/main/data/stock.json";
+
+    // STATE
+    let rawItems = [];
+    let filters = { search: '', category: 'All', status: 'all', view: 'grid' };
+
+    // DOM
+    const el = {
+      loader: document.getElementById('loader'), bootPct: document.getElementById('bootPct'), loadBar: document.getElementById('loadBar'),
+      app: document.getElementById('app'), grid: document.getElementById('gridTarget'), skeleton: document.getElementById('skeletonTarget'),
+      refreshBtn: document.getElementById('refreshBtn'), empty: document.getElementById('emptyState'), searchInput: document.getElementById('searchInput'),
+      kpiTotal: document.getElementById('kpiTotal'), kpiActive: document.getElementById('kpiActive'), kpiLow: document.getElementById('kpiLow'),
+      drawer: document.getElementById('drawer'), drawerBack: document.getElementById('drawerBackdrop'), closeDrawerBtn: document.getElementById('closeDrawer'),
+      dName: document.getElementById('dName'), dSku: document.getElementById('dSku'), dCat: document.getElementById('dCat'),
+      dPrice: document.getElementById('dPrice'), dStock: document.getElementById('dStock'), dDesc: document.getElementById('dDesc'),
+      dImage: document.getElementById('dImage'), dUpdate: document.getElementById('dUpdate'),
+      viewGrid: document.getElementById('viewGrid'), viewList: document.getElementById('viewList')
+    };
+
+    // --- SELECTOR LOGIC ---
+    function initSelectors() {
+      document.querySelectorAll('.select-trigger').forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const parent = trigger.parentElement;
+          document.querySelectorAll('.tactical-select').forEach(sel => { if (sel !== parent) sel.classList.remove('active'); });
+          parent.classList.toggle('active');
+        });
+      });
+      document.addEventListener('click', () => document.querySelectorAll('.tactical-select').forEach(sel => sel.classList.remove('active')));
+      
+      const statWrapper = document.getElementById('statSelectWrapper');
+      statWrapper.querySelectorAll('.option').forEach(opt => {
+        opt.addEventListener('click', (e) => {
+          handleOptionClick(e, statWrapper, (val) => { filters.status = val; renderGrid(); });
+        });
+      });
+    }
+
+    function handleOptionClick(e, wrapper, callback) {
+      e.stopPropagation(); const opt = e.target;
+      wrapper.querySelector('.selected')?.classList.remove('selected'); opt.classList.add('selected');
+      const label = wrapper.querySelector('.label'); label.innerText = `${label.innerText.split(':')[0]}: ${opt.innerText}`;
+      wrapper.classList.remove('active'); callback(opt.dataset.value);
+    }
+
+    // --- BOOT ---
+    function runBoot() {
+      const tl = gsap.timeline({ onComplete: () => { document.body.style.overflow = 'auto'; loadData(); }});
+      tl.to(el.loadBar, { width: '100%', duration: 1.2, ease: "power2.inOut" })
+        .to(el.bootPct, { innerText: "100%", duration: 1.2, snap: { innerText: 1 }, ease: "none", onUpdate: function() { this.targets()[0].innerHTML = Math.ceil(this.progress() * 100) + "%"; } }, "<")
+        .to(el.loader, { yPercent: -100, duration: 0.8, ease: "expo.inOut", delay: 0.2 })
+        .set(el.loader, { display: 'none' })
+        .to(el.app, { opacity: 1, duration: 0.5 })
+        .from("header > div", { y: -20, opacity: 0, stagger: 0.1, duration: 0.6, ease: "power2.out" })
+        .from("nav", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" }, "-=0.4");
+    }
+
+    // --- DATA LOADING (WITH DELAY) ---
+    async function loadData() {
+      const btnSpan = el.refreshBtn.querySelector('span'); const originalText = btnSpan.innerText;
+      btnSpan.innerText = "SINCRONIZANDO...";
+      el.refreshBtn.classList.add('pointer-events-none', 'opacity-50');
+      
+      // Show Skeleton
+      el.grid.classList.add('hidden');
+      el.empty.classList.add('hidden');
+      el.skeleton.classList.remove('hidden');
+      // Generate Skeleton HTML
+      el.skeleton.innerHTML = Array(10).fill('').map(() => `
+        <div class="h-64 bg-[#0E0E0E] border border-[#222] skeleton rounded"></div>
+      `).join('');
+      el.skeleton.className = filters.view === 'grid' 
+        ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-6"
+        : "flex flex-col gap-3";
+      if(filters.view === 'list') el.skeleton.innerHTML = Array(6).fill('').map(() => `<div class="h-24 bg-[#0E0E0E] border border-[#222] skeleton rounded"></div>`).join('');
+
+      try {
+        // ARTIFICIAL DELAY (1.5s) to show off skeleton
+        const minDelay = new Promise(resolve => setTimeout(resolve, 1500));
+        const fetchPromise = fetch(`${DATA_URL}?t=${Date.now()}`);
+        
+        const [_, res] = await Promise.all([minDelay, fetchPromise]);
+        
+        if(!res.ok) throw new Error("Error fetching data");
+        const data = await res.json();
+        rawItems = data.items || [];
+        
+        updateCategoryDropdown();
+        updateKPIs();
+        renderGrid();
+      } catch (e) {
+        console.error("Error:", e);
+      } finally {
+        btnSpan.innerText = originalText;
+        el.refreshBtn.classList.remove('pointer-events-none', 'opacity-50');
+        el.skeleton.classList.add('hidden');
+        el.grid.classList.remove('hidden');
+      }
+    }
+
+    function updateKPIs() {
+      const active = rawItems.filter(i => i.isActive);
+      const low = active.filter(i => i.stock !== -1 && i.stock <= 5);
+      gsap.to(el.kpiTotal, { innerText: rawItems.length, snap: "innerText", duration: 1 });
+      gsap.to(el.kpiActive, { innerText: active.length, snap: "innerText", duration: 1 });
+      gsap.to(el.kpiLow, { innerText: low.length, snap: "innerText", duration: 1 });
+    }
+
+    function updateCategoryDropdown() {
+      const cats = [...new Set(rawItems.map(i => i.category || 'General'))].sort();
+      const container = document.getElementById('catOptions');
+      const wrapper = document.getElementById('catSelectWrapper');
+      let html = `<div class="option selected" data-value="All">Todas</div>`;
+      cats.forEach(c => html += `<div class="option" data-value="${c}">${c}</div>`);
+      container.innerHTML = html;
+      container.querySelectorAll('.option').forEach(opt => {
+        opt.addEventListener('click', (e) => handleOptionClick(e, wrapper, (val) => { filters.category = val; renderGrid(); }));
+      });
+    }
+
+    // --- RENDER ---
+    function renderGrid() {
+      const q = filters.search.toLowerCase();
+      const filtered = rawItems.filter(i => {
+        if (!i.isActive) return false;
+        if (filters.category !== 'All' && i.category !== filters.category) return false;
+        
+        const inf = i.stock === -1;
+        const out = !inf && i.stock <= 0;
+        const low = !inf && i.stock <= 5 && i.stock > 0;
+        const ok = !inf && i.stock > 5;
+
+        if (filters.status === 'out' && !out) return false;
+        if (filters.status === 'low' && !low) return false;
+        if (filters.status === 'in' && !ok) return false;
+
+        return `${i.name} ${i.sku} ${i.category}`.toLowerCase().includes(q);
+      });
+
+      filtered.sort((a,b) => (b.stock === 0 ? -1 : 1));
+
+      el.grid.innerHTML = '';
+      if (filtered.length === 0) { el.empty.classList.remove('hidden'); return; }
+      el.empty.classList.add('hidden');
+
+      // Layout Switch logic
+      el.grid.className = filters.view === 'grid' 
+        ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-6" 
+        : "flex flex-col gap-3 view-list";
+
+      filtered.forEach(item => {
+        const card = document.createElement('article');
+        card.className = "card-tech group cursor-pointer opacity-0 translate-y-4";
+        card.onclick = () => openDrawer(item);
+        
+        const img = item.image ? `<img src="${item.image}" class="card-img w-full h-full object-cover" loading="lazy">` 
+                               : `<div class="w-full h-full bg-[#111] grid place-items-center text-gray-700 font-mono text-xs">NO IMG</div>`;
+
+        let stockBadge = "", stockColor = "text-white";
+        if(item.stock === -1) { stockBadge="∞"; stockColor="text-neon"; }
+        else if(item.stock <= 0) { stockBadge="OUT"; stockColor="text-red-500"; }
+        else if(item.stock <= 5) { stockBadge=`${item.stock}`; stockColor="text-orange-400"; }
+        else { stockBadge=`${item.stock}`; stockColor="text-white"; }
+
+        card.innerHTML = `
+          <div class="img-wrap relative aspect-[4/3] bg-[#050505] overflow-hidden border-b border-[#222]">
+            ${img}
+            <div class="badge-wrap absolute top-2 right-2 bg-black/80 backdrop-blur border border-[#333] px-2 py-1 z-10">
+              <span class="font-mono text-xs font-bold ${stockColor}">${stockBadge}</span>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>
+          </div>
+          <div class="content-wrap p-5">
+             <div>
+                <div class="text-[10px] text-neon font-hud uppercase tracking-widest mb-1 opacity-80">${item.category || 'GEN'}</div>
+                <h3 class="font-display font-bold text-white text-lg leading-tight truncate mb-1 group-hover:text-neon transition-colors">${item.name}</h3>
+             </div>
+             <div class="flex flex-col items-end justify-center">
+                <span class="font-mono text-xs text-gray-500 block mb-1">${item.sku}</span>
+                <span class="font-display font-bold text-gray-200 text-sm">
+                  ${new Intl.NumberFormat('es-ES', { style: 'currency', currency: item.currency }).format(item.priceCents/100)}
+                </span>
+             </div>
+          </div>
+        `;
+        el.grid.appendChild(card);
+      });
+
+      gsap.to(".card-tech", { opacity: 1, y: 0, duration: 0.3, stagger: 0.04, ease: "power2.out" });
+    }
+
+    // --- DRAWER ---
+    function openDrawer(item) {
+      el.dName.innerText = item.name; el.dSku.innerText = item.sku; el.dCat.innerText = item.category || 'General';
+      el.dPrice.innerText = new Intl.NumberFormat('es-ES', { style: 'currency', currency: item.currency }).format(item.priceCents/100);
+      el.dDesc.innerText = item.description || "Información clasificada no disponible.";
+      el.dUpdate.innerText = item.updatedAt ? new Date(item.updatedAt).toLocaleString() : '---';
+      
+      if(item.stock === -1) el.dStock.innerHTML = `<span class="text-neon">ILIMITADO</span>`;
+      else if(item.stock <= 0) el.dStock.innerHTML = `<span class="text-red-500">AGOTADO</span>`;
+      else if(item.stock <= 5) el.dStock.innerHTML = `<span class="text-orange-400">BAJO (${item.stock})</span>`;
+      else el.dStock.innerHTML = `<span class="text-white">DISPONIBLE (${item.stock})</span>`;
+
+      if(item.image) el.dImage.style.backgroundImage = `url('${item.image}')`;
+      else { el.dImage.style.backgroundImage = 'none'; el.dImage.style.backgroundColor = '#111'; }
+
+      el.drawerBack.classList.remove('hidden'); requestAnimationFrame(() => el.drawerBack.classList.remove('opacity-0'));
+      gsap.to(el.drawer, { x: 0, duration: 0.5, ease: "expo.out" }); document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      gsap.to(el.drawer, { x: "100%", duration: 0.4, ease: "power2.in", onComplete: () => { el.drawerBack.classList.add('opacity-0'); setTimeout(() => el.drawerBack.classList.add('hidden'), 300); document.body.style.overflow = 'auto'; }});
+    }
+
+    // --- EVENTS ---
+    el.searchInput.addEventListener('input', (e) => { filters.search = e.target.value; renderGrid(); });
+    el.refreshBtn.addEventListener('click', loadData);
+    el.closeDrawerBtn.addEventListener('click', closeDrawer); el.drawerBack.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeDrawer(); });
+
+    // View Switchers
+    el.viewGrid.addEventListener('click', () => { filters.view='grid'; el.viewGrid.classList.add('active'); el.viewList.classList.remove('active'); renderGrid(); });
+    el.viewList.addEventListener('click', () => { filters.view='list'; el.viewList.classList.add('active'); el.viewGrid.classList.remove('active'); renderGrid(); });
+
+    window.addEventListener('load', () => { initSelectors(); runBoot(); });
+  </script>
+</body>
+</html>

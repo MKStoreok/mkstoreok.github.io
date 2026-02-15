@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-02-15T17:14:07.438Z",
+  "guildId": "1471170954603266144",
+  "items": [
+    {
+      "sku": "KPPOBOID",
+      "name": "Blueprint Barra de luz azul",
+      "category": "Blueprints",
+      "description": "Una luz química arrojable que ilumina el área que la rodea.",
+      "priceCents": 400,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/cc/Blue_Light_Stick.png/348px-Blue_Light_Stick.png.webp",
+      "updatedAt": "2026-02-15T17:09:16.444Z"
+    },
+    {
+      "sku": "1QKVHQCR",
+      "name": "Blueprint Bettina",
+      "category": "Blueprints",
+      "description": "El Bettina es totalmente automático Rifle de asalto que usa Munición pesada.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 5,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/ac/Bettina.png/348px-Bettina.png.webp",
+      "updatedAt": "2026-02-15T02:47:42.501Z"
+    }
+  ]
+}
