@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T20:40:00.061Z",
+  "generatedAt": "2026-02-15T20:50:00.058Z",
   "guildId": "1471170954603266144",
   "items": [
     {
@@ -9,10 +9,22 @@
       "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
       "priceCents": 900,
       "currency": "usd",
-      "stock": 3,
+      "stock": 2,
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
-      "updatedAt": "2026-02-15T20:21:09.628Z"
+      "updatedAt": "2026-02-15T20:48:22.014Z"
+    },
+    {
+      "sku": "IZU2-1BN",
+      "name": "Silenciador I",
+      "category": "Blueprints",
+      "description": "Reduce ligeramente la cantidad de ruido que se produce al disparar.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/f/f7/Silencer_I.png/348px-Silencer_I.png.webp",
+      "updatedAt": "2026-02-15T20:48:13.262Z"
     },
     {
       "sku": "DMKJMZR3",
@@ -25,18 +37,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/c/c0/Silencer_II.png/348px-Silencer_II.png.webp",
       "updatedAt": "2026-02-15T20:04:25.775Z"
-    },
-    {
-      "sku": "IZU2-1BN",
-      "name": "Silenciador I",
-      "category": "Blueprints",
-      "description": "Reduce ligeramente la cantidad de ruido que se produce al disparar.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/f/f7/Silencer_I.png/348px-Silencer_I.png.webp",
-      "updatedAt": "2026-02-15T20:04:08.561Z"
     },
     {
       "sku": "A5LNYB68",
