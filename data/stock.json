@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-15T17:50:00.062Z",
+  "generatedAt": "2026-02-15T18:00:00.044Z",
   "guildId": "1471170954603266144",
   "items": [
     {
@@ -9,10 +9,70 @@
       "description": "La Torrente es una ametralladora ligera totalmente automática que utiliza munición mediana.",
       "priceCents": 500,
       "currency": "usd",
-      "stock": 5,
+      "stock": 4,
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/1/1e/Torrente-Level1.png/348px-Torrente-Level1.png.webp",
-      "updatedAt": "2026-02-15T17:44:42.749Z"
+      "updatedAt": "2026-02-15T17:59:40.896Z"
+    },
+    {
+      "sku": "DEQ2PGSQ",
+      "name": "Blueprint de la Mina de impulso",
+      "category": "Blueprints",
+      "description": "Una mina que se activa por proximidad y que aparece y derriba todo lo que se encuentra dentro de su radio.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/af/Pulse_Mine.png/348px-Pulse_Mine.png.webp",
+      "updatedAt": "2026-02-15T17:58:31.978Z"
+    },
+    {
+      "sku": "KPPOBOID",
+      "name": "Blueprint de Barra luminosa azul",
+      "category": "Blueprints",
+      "description": "Una luz química arrojable que ilumina el área que la rodea.",
+      "priceCents": 400,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/cc/Blue_Light_Stick.png/348px-Blue_Light_Stick.png.webp",
+      "updatedAt": "2026-02-15T17:57:12.836Z"
+    },
+    {
+      "sku": "VT5YWFU8",
+      "name": "Blueprints de Barra luminosa verde",
+      "category": "Blueprints",
+      "description": "Una luz química arrojadiza que ilumina el área que la rodea.",
+      "priceCents": 400,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/27/Green_Light_Stick.png/348px-Green_Light_Stick.png.webp",
+      "updatedAt": "2026-02-15T17:56:30.214Z"
+    },
+    {
+      "sku": "IEQU_3SC",
+      "name": "Blueprint de la Mina de gas",
+      "category": "Blueprints",
+      "description": "Una mina que se activa por proximidad y que aparece y despliega una nube de gas que drena rápidamente la resistencia.",
+      "priceCents": 500,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/ce/Gas_Mine.png/348px-Gas_Mine.png.webp",
+      "updatedAt": "2026-02-15T17:55:18.963Z"
+    },
+    {
+      "sku": "ROIPGUAL",
+      "name": "Blueprint de la Caja de fuegos artificiales",
+      "category": "Blueprints",
+      "description": "Un conjunto de deslumbrantes fuegos artificiales activados a distancia que seguro ofrecerán un espectáculo.",
+      "priceCents": 500,
+      "currency": "usd",
+      "stock": 0,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Fireworks_Box.png/348px-Fireworks_Box.png.webp",
+      "updatedAt": "2026-02-15T17:54:00.291Z"
     },
     {
       "sku": "2RP0ABLR",
@@ -61,18 +121,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/8/88/Aphelion.png/348px-Aphelion.png.webp",
       "updatedAt": "2026-02-15T17:37:07.490Z"
-    },
-    {
-      "sku": "KPPOBOID",
-      "name": "Blueprint Barra de luz azul",
-      "category": "Blueprints",
-      "description": "Una luz química arrojable que ilumina el área que la rodea.",
-      "priceCents": 400,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/c/cc/Blue_Light_Stick.png/348px-Blue_Light_Stick.png.webp",
-      "updatedAt": "2026-02-15T17:09:16.444Z"
     },
     {
       "sku": "1QKVHQCR",
