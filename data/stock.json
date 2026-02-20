@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-02-20T02:10:00.062Z",
+  "generatedAt": "2026-02-20T02:20:00.066Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "PRHOMQUP",
+      "name": "Barra luminosa amarilla",
+      "category": "Blueprints",
+      "description": "Una luz química arrojadiza que ilumina el área que la rodea.",
+      "priceCents": 400,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/1f/Yellow_Light_Stick.png/348px-Yellow_Light_Stick.png.webp",
+      "updatedAt": "2026-02-20T02:12:17.312Z"
+    },
     {
       "sku": "Z6CE3JTF",
       "name": "Granada de gatillo",
@@ -13,18 +25,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/0/09/Trigger_Nade.png/348px-Trigger_Nade.png.webp",
       "updatedAt": "2026-02-15T21:25:05.464Z"
-    },
-    {
-      "sku": "PRHOMQUP",
-      "name": "Barra luminosa amarilla",
-      "category": "Blueprints",
-      "description": "Una luz química arrojadiza que ilumina el área que la rodea.",
-      "priceCents": 400,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/1/1f/Yellow_Light_Stick.png/348px-Yellow_Light_Stick.png.webp",
-      "updatedAt": "2026-02-15T21:19:48.740Z"
     },
     {
       "sku": "FRYSWYS7",
