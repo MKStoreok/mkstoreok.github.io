@@ -1,7 +1,139 @@
 {
-  "generatedAt": "2026-02-20T02:40:00.064Z",
+  "generatedAt": "2026-02-20T02:50:00.054Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "ROIPGUAL",
+      "name": "Caja de fuegos artificiales",
+      "category": "Blueprints",
+      "description": "Un conjunto de deslumbrantes fuegos artificiales activados a distancia que seguro ofrecerán un espectáculo.",
+      "priceCents": 500,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Fireworks_Box.png/348px-Fireworks_Box.png.webp",
+      "updatedAt": "2026-02-20T02:49:25.196Z"
+    },
+    {
+      "sku": "P-RVKMJ4",
+      "name": "Empuñadura inclinada II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente el retroceso horizontal.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/2b/Angled_Grip_II.png/348px-Angled_Grip_II.png.webp",
+      "updatedAt": "2026-02-20T02:48:43.393Z"
+    },
+    {
+      "sku": "1QKVHQCR",
+      "name": "Bettina",
+      "category": "Blueprints",
+      "description": "El Bettina es totalmente automático Rifle de asalto que usa Munición pesada.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/ac/Bettina.png/348px-Bettina.png.webp",
+      "updatedAt": "2026-02-20T02:47:32.660Z"
+    },
+    {
+      "sku": "IEQU_3SC",
+      "name": "Mina de gas",
+      "category": "Blueprints",
+      "description": "Una mina que se activa por proximidad y que aparece y despliega una nube de gas que drena rápidamente la resistencia.",
+      "priceCents": 500,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/ce/Gas_Mine.png/348px-Gas_Mine.png.webp",
+      "updatedAt": "2026-02-20T02:46:36.245Z"
+    },
+    {
+      "sku": "DEQ2PGSQ",
+      "name": "Mina de impulso",
+      "category": "Blueprints",
+      "description": "Una mina que se activa por proximidad y que aparece y derriba todo lo que se encuentra dentro de su radio.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 1,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/af/Pulse_Mine.png/348px-Pulse_Mine.png.webp",
+      "updatedAt": "2026-02-20T02:45:33.416Z"
+    },
+    {
+      "sku": "O6-VED28",
+      "name": "Empuñadura inclinada III",
+      "category": "Blueprints",
+      "description": "Reduce significativamente el retroceso horizontal",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Angled_Grip_III.png/348px-Angled_Grip_III.png.webp",
+      "updatedAt": "2026-02-20T02:44:32.191Z"
+    },
+    {
+      "sku": "3GX0IYKM",
+      "name": "Yunke",
+      "category": "Blueprints",
+      "description": "Es un cañón de mano de acción simple que utiliza munición pesada.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/0/00/Anvil-Level1.png/348px-Anvil-Level1.png.webp",
+      "updatedAt": "2026-02-20T02:43:19.409Z"
+    },
+    {
+      "sku": "_IYXWHX3",
+      "name": "Ecualizador",
+      "category": "Blueprints",
+      "description": "Es un rifle de rayos automático especial que usa cargadores de energía.\n\n*Desbloquea el cargador de energía*",
+      "priceCents": 1000,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/9/96/Equalizer.png/348px-Equalizer.png.webp",
+      "updatedAt": "2026-02-20T02:42:21.175Z"
+    },
+    {
+      "sku": "5DPHFQAK",
+      "name": "Cargador mediano ampliador III",
+      "category": "Blueprints",
+      "description": "Amplía significativamente la capacidad de munición de las armas compatibles que utilizan munición mediana.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/a/a1/Extended_Medium_Mag_III.png/348px-Extended_Medium_Mag_III.png.webp",
+      "updatedAt": "2026-02-20T02:41:42.368Z"
+    },
+    {
+      "sku": "HDMLTSMA",
+      "name": "Piezas de arma ligeras",
+      "category": "Blueprints",
+      "description": "Las piezas de pistola ligera se utilizan para mejorar, fabricar y reparar armas que usan munición ligera.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/c9/Light_Gun_Parts.png/348px-Light_Gun_Parts.png.webp",
+      "updatedAt": "2026-02-20T02:41:06.692Z"
+    },
+    {
+      "sku": "A1ZAQOGD",
+      "name": "Il Toro",
+      "category": "Blueprints",
+      "description": "Tiene una gran dispersión de balas, una caída pronunciada y un alto daño.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 5,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/5/50/Il_Toro-Level1.png/348px-Il_Toro-Level1.png.webp",
+      "updatedAt": "2026-02-20T02:40:16.794Z"
+    },
     {
       "sku": "S2NKCSZ0",
       "name": "Mina de choque",
@@ -423,18 +555,6 @@
       "updatedAt": "2026-02-15T19:56:11.300Z"
     },
     {
-      "sku": "HDMLTSMA",
-      "name": "Piezas de arma ligeras",
-      "category": "Blueprints",
-      "description": "Las piezas de pistola ligera se utilizan para mejorar, fabricar y reparar armas que usan munición ligera.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 3,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/c/c9/Light_Gun_Parts.png/348px-Light_Gun_Parts.png.webp",
-      "updatedAt": "2026-02-15T19:55:54.551Z"
-    },
-    {
       "sku": "RQSP5EJO",
       "name": "Mina explosiva",
       "category": "Blueprints",
@@ -445,18 +565,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/2/22/Explosive_Mine.png/348px-Explosive_Mine.png.webp",
       "updatedAt": "2026-02-15T19:55:19.589Z"
-    },
-    {
-      "sku": "A1ZAQOGD",
-      "name": "Il Toro",
-      "category": "Blueprints",
-      "description": "Tiene una gran dispersión de balas, una caída pronunciada y un alto daño.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 4,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/5/50/Il_Toro-Level1.png/348px-Il_Toro-Level1.png.webp",
-      "updatedAt": "2026-02-15T19:54:31.832Z"
     },
     {
       "sku": "SD05LNTE",
@@ -519,18 +627,6 @@
       "updatedAt": "2026-02-15T19:52:31.858Z"
     },
     {
-      "sku": "5DPHFQAK",
-      "name": "Cargador mediano ampliador III",
-      "category": "Blueprints",
-      "description": "Amplía significativamente la capacidad de munición de las armas compatibles que utilizan munición mediana.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 3,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/a/a1/Extended_Medium_Mag_III.png/348px-Extended_Medium_Mag_III.png.webp",
-      "updatedAt": "2026-02-15T19:52:05.936Z"
-    },
-    {
       "sku": "5VIDFCSZ",
       "name": "Cargador mediano ampliador II",
       "category": "Blueprints",
@@ -577,18 +673,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/2/2f/Extended_Barrel.png/348px-Extended_Barrel.png.webp",
       "updatedAt": "2026-02-15T19:50:41.210Z"
-    },
-    {
-      "sku": "_IYXWHX3",
-      "name": "Ecualizador",
-      "category": "Blueprints",
-      "description": "Es un rifle de rayos automático especial que usa cargadores de energía.\n\n*Desbloquea el cargador de energía*",
-      "priceCents": 1000,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/9/96/Equalizer.png/348px-Equalizer.png.webp",
-      "updatedAt": "2026-02-15T19:50:21.939Z"
     },
     {
       "sku": "WOBXOX7C",
@@ -687,18 +771,6 @@
       "updatedAt": "2026-02-15T19:47:17.396Z"
     },
     {
-      "sku": "3GX0IYKM",
-      "name": "Yunke",
-      "category": "Blueprints",
-      "description": "Es un cañón de mano de acción simple que utiliza munición pesada.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 3,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/0/00/Anvil-Level1.png/348px-Anvil-Level1.png.webp",
-      "updatedAt": "2026-02-15T19:46:56.705Z"
-    },
-    {
       "sku": "UHH4PWJI",
       "name": "Parte cascos",
       "category": "Blueprints",
@@ -709,30 +781,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/b/ba/Hullcracker-Level1.png/348px-Hullcracker-Level1.png.webp",
       "updatedAt": "2026-02-15T19:46:35.681Z"
-    },
-    {
-      "sku": "O6-VED28",
-      "name": "Empuñadura inclinada III",
-      "category": "Blueprints",
-      "description": "Reduce significativamente el retroceso horizontal",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Angled_Grip_III.png/348px-Angled_Grip_III.png.webp",
-      "updatedAt": "2026-02-15T19:46:16.012Z"
-    },
-    {
-      "sku": "P-RVKMJ4",
-      "name": "Empuñadura inclinada II",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente el retroceso horizontal.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/2/2b/Angled_Grip_II.png/348px-Angled_Grip_II.png.webp",
-      "updatedAt": "2026-02-15T19:45:54.955Z"
     },
     {
       "sku": "YNPU0KQF",
@@ -759,18 +807,6 @@
       "updatedAt": "2026-02-15T19:45:13.011Z"
     },
     {
-      "sku": "DEQ2PGSQ",
-      "name": "Mina de impulso",
-      "category": "Blueprints",
-      "description": "Una mina que se activa por proximidad y que aparece y derriba todo lo que se encuentra dentro de su radio.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/a/af/Pulse_Mine.png/348px-Pulse_Mine.png.webp",
-      "updatedAt": "2026-02-15T19:44:45.978Z"
-    },
-    {
       "sku": "KPPOBOID",
       "name": "Barra luminosa azul",
       "category": "Blueprints",
@@ -793,30 +829,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/2/27/Green_Light_Stick.png/348px-Green_Light_Stick.png.webp",
       "updatedAt": "2026-02-15T19:44:05.247Z"
-    },
-    {
-      "sku": "IEQU_3SC",
-      "name": "Mina de gas",
-      "category": "Blueprints",
-      "description": "Una mina que se activa por proximidad y que aparece y despliega una nube de gas que drena rápidamente la resistencia.",
-      "priceCents": 500,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/c/ce/Gas_Mine.png/348px-Gas_Mine.png.webp",
-      "updatedAt": "2026-02-15T19:43:38.101Z"
-    },
-    {
-      "sku": "ROIPGUAL",
-      "name": "Caja de fuegos artificiales",
-      "category": "Blueprints",
-      "description": "Un conjunto de deslumbrantes fuegos artificiales activados a distancia que seguro ofrecerán un espectáculo.",
-      "priceCents": 500,
-      "currency": "usd",
-      "stock": 0,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/0/0f/Fireworks_Box.png/348px-Fireworks_Box.png.webp",
-      "updatedAt": "2026-02-15T19:43:04.305Z"
     },
     {
       "sku": "2RP0ABLR",
@@ -865,18 +877,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/8/88/Aphelion.png/348px-Aphelion.png.webp",
       "updatedAt": "2026-02-15T19:41:17.564Z"
-    },
-    {
-      "sku": "1QKVHQCR",
-      "name": "Bettina",
-      "category": "Blueprints",
-      "description": "El Bettina es totalmente automático Rifle de asalto que usa Munición pesada.",
-      "priceCents": 800,
-      "currency": "usd",
-      "stock": 5,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/a/ac/Bettina.png/348px-Bettina.png.webp",
-      "updatedAt": "2026-02-15T19:40:48.889Z"
     }
   ]
 }
