@@ -1,7 +1,19 @@
 {
-  "generatedAt": "2026-02-20T02:50:00.054Z",
+  "generatedAt": "2026-02-20T02:51:26.382Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "FRYSWYS7",
+      "name": "Táctico ver. 3 (curación)",
+      "category": "Blueprints",
+      "description": "Un aumento centrado en la curación que agrega espacios adicionales para elementos de curación.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/12/Tactical_Mk._3_%28Healing%29.png/348px-Tactical_Mk._3_%28Healing%29.png.webp",
+      "updatedAt": "2026-02-20T02:50:35.650Z"
+    },
     {
       "sku": "ROIPGUAL",
       "name": "Caja de fuegos artificiales",
@@ -265,18 +277,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/0/09/Trigger_Nade.png/348px-Trigger_Nade.png.webp",
       "updatedAt": "2026-02-15T21:25:05.464Z"
-    },
-    {
-      "sku": "FRYSWYS7",
-      "name": "Táctico ver. 3 (curación)",
-      "category": "Blueprints",
-      "description": "Un aumento centrado en la curación que agrega espacios adicionales para elementos de curación.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/1/12/Tactical_Mk._3_%28Healing%29.png/348px-Tactical_Mk._3_%28Healing%29.png.webp",
-      "updatedAt": "2026-02-15T21:18:32.563Z"
     },
     {
       "sku": "3SRERDFE",
