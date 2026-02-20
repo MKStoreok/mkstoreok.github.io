@@ -1,7 +1,115 @@
 {
-  "generatedAt": "2026-02-20T02:30:00.079Z",
+  "generatedAt": "2026-02-20T02:40:00.064Z",
   "guildId": "1471170954603266144",
   "items": [
+    {
+      "sku": "S2NKCSZ0",
+      "name": "Mina de choque",
+      "category": "Blueprints",
+      "description": "Una mina que se activa por proximidad y que aparece y aturde todo lo que se encuentra dentro de su radio.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/5/5a/Jolt_Mine.png/348px-Jolt_Mine.png.webp",
+      "updatedAt": "2026-02-20T02:39:35.035Z"
+    },
+    {
+      "sku": "FJHL2B8D",
+      "name": "Jupiter",
+      "category": "Blueprints",
+      "description": "Un rifle francotirador de cerrojo con un daño y una precisión excepcionales, pero un manejo lento.",
+      "priceCents": 1000,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/6/68/Jupiter.png/348px-Jupiter.png.webp",
+      "updatedAt": "2026-02-20T02:38:42.003Z"
+    },
+    {
+      "sku": "A5LNYB68",
+      "name": "Aguafiestas",
+      "category": "Blueprints",
+      "description": "Una granada que detona después de un tiempo y aturde a los enemigos dentro de su radio.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/18/Showstopper.png/348px-Showstopper.png.webp",
+      "updatedAt": "2026-02-20T02:37:41.437Z"
+    },
+    {
+      "sku": "DMKJMZR3",
+      "name": "Silenciador II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/c/c0/Silencer_II.png/348px-Silencer_II.png.webp",
+      "updatedAt": "2026-02-20T02:37:12.501Z"
+    },
+    {
+      "sku": "FHO92YH3",
+      "name": "Culata estable III",
+      "category": "Blueprints",
+      "description": "Mejora significativamente la dispersión y el tiempo de recuperación del retroceso.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 2,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/e/eb/Stable_Stock_III.png/348px-Stable_Stock_III.png.webp",
+      "updatedAt": "2026-02-20T02:35:46.045Z"
+    },
+    {
+      "sku": "NLTXLJ3W",
+      "name": "Silenciador de escopeta",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 4,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
+      "updatedAt": "2026-02-20T02:34:53.857Z"
+    },
+    {
+      "sku": "IP21B_G5",
+      "name": "Empuñadura vertical II",
+      "category": "Blueprints",
+      "description": "Reduce moderadamente el retroceso vertical.",
+      "priceCents": 700,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/3/3c/Vertical_Grip_II.png/348px-Vertical_Grip_II.png.webp",
+      "updatedAt": "2026-02-20T02:34:16.221Z"
+    },
+    {
+      "sku": "VWUCCUVJ",
+      "name": "Pulverisador vita",
+      "category": "Blueprints",
+      "description": "Un objeto médico que restaura la salud continuamente durante su uso. Puedes usarlo en ti o en tus aliados.",
+      "priceCents": 900,
+      "currency": "usd",
+      "stock": 3,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/1/1d/Vita_Spray.png/348px-Vita_Spray.png.webp",
+      "updatedAt": "2026-02-20T02:33:56.843Z"
+    },
+    {
+      "sku": "UFRG_5M2",
+      "name": "Empuñadura vertical III",
+      "category": "Blueprints",
+      "description": "Reduce significativamente el retroceso vertical.",
+      "priceCents": 800,
+      "currency": "usd",
+      "stock": 8,
+      "isActive": true,
+      "image": "https://arcraiders.wiki/w/images/thumb/2/20/Vertical_Grip_III.png/348px-Vertical_Grip_III.png.webp",
+      "updatedAt": "2026-02-20T02:33:23.518Z"
+    },
     {
       "sku": "PRHOMQUP",
       "name": "Barra luminosa amarilla",
@@ -135,18 +243,6 @@
       "updatedAt": "2026-02-15T21:08:44.871Z"
     },
     {
-      "sku": "VWUCCUVJ",
-      "name": "Pulverisador vita",
-      "category": "Blueprints",
-      "description": "Un objeto médico que restaura la salud continuamente durante su uso. Puedes usarlo en ti o en tus aliados.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/1/1d/Vita_Spray.png/348px-Vita_Spray.png.webp",
-      "updatedAt": "2026-02-15T21:07:59.493Z"
-    },
-    {
       "sku": "PQIOAZTK",
       "name": "Inyeccion vita",
       "category": "Blueprints",
@@ -157,42 +253,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/7/7d/Vita_Shot.png/348px-Vita_Shot.png.webp",
       "updatedAt": "2026-02-15T21:06:44.520Z"
-    },
-    {
-      "sku": "UFRG_5M2",
-      "name": "Empuñadura vertical III",
-      "category": "Blueprints",
-      "description": "Reduce significativamente el retroceso vertical.",
-      "priceCents": 800,
-      "currency": "usd",
-      "stock": 7,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/2/20/Vertical_Grip_III.png/348px-Vertical_Grip_III.png.webp",
-      "updatedAt": "2026-02-15T21:05:53.222Z"
-    },
-    {
-      "sku": "IP21B_G5",
-      "name": "Empuñadura vertical II",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente el retroceso vertical.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/3/3c/Vertical_Grip_II.png/348px-Vertical_Grip_II.png.webp",
-      "updatedAt": "2026-02-15T21:04:29.911Z"
-    },
-    {
-      "sku": "NLTXLJ3W",
-      "name": "Silenciador de escopeta",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
-      "priceCents": 900,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/4/4d/Shotgun_Silencer.png/348px-Shotgun_Silencer.png.webp",
-      "updatedAt": "2026-02-15T21:01:54.653Z"
     },
     {
       "sku": "RPDUW6JK",
@@ -219,18 +279,6 @@
       "updatedAt": "2026-02-15T20:59:28.606Z"
     },
     {
-      "sku": "FHO92YH3",
-      "name": "Culata estable III",
-      "category": "Blueprints",
-      "description": "Mejora significativamente la dispersión y el tiempo de recuperación del retroceso.",
-      "priceCents": 800,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/e/eb/Stable_Stock_III.png/348px-Stable_Stock_III.png.webp",
-      "updatedAt": "2026-02-15T20:58:30.305Z"
-    },
-    {
       "sku": "PNKKJHSJ",
       "name": "Culata estable II",
       "category": "Blueprints",
@@ -253,30 +301,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/f/f7/Silencer_I.png/348px-Silencer_I.png.webp",
       "updatedAt": "2026-02-15T20:48:13.262Z"
-    },
-    {
-      "sku": "DMKJMZR3",
-      "name": "Silenciador II",
-      "category": "Blueprints",
-      "description": "Reduce moderadamente la cantidad de ruido producido al disparar.",
-      "priceCents": 800,
-      "currency": "usd",
-      "stock": 3,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/c/c0/Silencer_II.png/348px-Silencer_II.png.webp",
-      "updatedAt": "2026-02-15T20:04:25.775Z"
-    },
-    {
-      "sku": "A5LNYB68",
-      "name": "Aguafiestas",
-      "category": "Blueprints",
-      "description": "Una granada que detona después de un tiempo y aturde a los enemigos dentro de su radio.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/1/18/Showstopper.png/348px-Showstopper.png.webp",
-      "updatedAt": "2026-02-15T20:03:56.307Z"
     },
     {
       "sku": "ZL0_7Y0R",
@@ -411,18 +435,6 @@
       "updatedAt": "2026-02-15T19:55:54.551Z"
     },
     {
-      "sku": "FJHL2B8D",
-      "name": "Jupiter",
-      "category": "Blueprints",
-      "description": "Un rifle francotirador de cerrojo con un daño y una precisión excepcionales, pero un manejo lento.",
-      "priceCents": 1000,
-      "currency": "usd",
-      "stock": 2,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/6/68/Jupiter.png/348px-Jupiter.png.webp",
-      "updatedAt": "2026-02-15T19:55:36.793Z"
-    },
-    {
       "sku": "RQSP5EJO",
       "name": "Mina explosiva",
       "category": "Blueprints",
@@ -433,18 +445,6 @@
       "isActive": true,
       "image": "https://arcraiders.wiki/w/images/thumb/2/22/Explosive_Mine.png/348px-Explosive_Mine.png.webp",
       "updatedAt": "2026-02-15T19:55:19.589Z"
-    },
-    {
-      "sku": "S2NKCSZ0",
-      "name": "Mina de choque",
-      "category": "Blueprints",
-      "description": "Una mina que se activa por proximidad y que aparece y aturde todo lo que se encuentra dentro de su radio.",
-      "priceCents": 700,
-      "currency": "usd",
-      "stock": 1,
-      "isActive": true,
-      "image": "https://arcraiders.wiki/w/images/thumb/5/5a/Jolt_Mine.png/348px-Jolt_Mine.png.webp",
-      "updatedAt": "2026-02-15T19:54:56.524Z"
     },
     {
       "sku": "A1ZAQOGD",
